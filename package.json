@@ -1,29 +1,21 @@
 {
-  "name": "colorizer",
-  "version": "0.0.0",
-  "description": "ERROR: No README.md file found!",
-  "main": "colorizer.js",
-  "directories": {
-    "test": "test"
-  },
+  "name": "Grunt Karma Example",
+  "version": "0.1.0",
+  "description": "Bare bones example of Grunt with the grunt-karma task.",
+  "main": "source/colorizer.js",
   "scripts": {
-    "test": "./node_modules/.bin/grunt"
+    "test": "node_modules/.bin/grunt karma"
   },
-  "repository": "",
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobbdb/grunt-karma-example.git"
+  },
+  "author": "Dan Cobb",
   "license": "BSD",
-  "dependencies": {
-    "karma-script-launcher": "0.0.1",
-    "karma-firefox-launcher": "0.0.2",
-    "karma-chrome-launcher": "0.0.1",
-    "karma-requirejs": "0.0.1",
-    "karma-jasmine": "0.0.1",
-    "karma-coffee-preprocessor": "0.0.1",
-    "karma-phantomjs-launcher": "0.0.2",
-    "karma": "~0.9.3",
-    "karma-html2js-preprocessor": "0.0.1",
-    "grunt": "~0.4.1",
-    "grunt-karma": "~0.5.0",
-    "grunt-cli": "~0.1.9"
+  "devDependencies": {
+    "grunt-cli": "*",
+    "grunt": "*",
+    "karma": "0.10.2",
+    "grunt-karma": "*"
   }
 }
