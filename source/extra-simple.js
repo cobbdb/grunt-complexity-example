@@ -1,8 +1,6 @@
 /**
  * Module that does basically nothing.
  */
-function Greeter() {
-    return {
-        message: "Welcome!"
-    };
+function Greet() {
+    return 'Welcome!';
 }
