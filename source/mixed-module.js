@@ -30,17 +30,23 @@ function ComplexityShowcase(_, $) {
         /**
          * Large amount of control stuctures.
          */
-        getAtLeastTen: function () {
-            var rand = Math.random();
-            rand *= 100;
-            if (rand > 200) {
-                console.log('got lucky!');
-            } else {
-                while (rand < 10) {
-                    rand += 1;
+        analyze: function (num) {
+            var msg = 'boring';
+            if (num % 2 == 0) {
+                msg = 'even';
+                if (num % 4) {
+                    msg = 'by 4';
                 }
+                if (num % 6) {
+                    msg = 'by 6!';
+                }
+            } else {
+                msg = 'odd';
             }
-            return rand;
+            if (num < 10) {
+                msg = 'less than 10';
+            }
+            return msg;
         }
     };
 }

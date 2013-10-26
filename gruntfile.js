@@ -5,7 +5,7 @@ module.exports = function (grunt) {
                 src: 'source/*',
                 options: {
                     errorsOnly: false,
-                    cyclomatic: 2,
+                    cyclomatic: 4,
                     halstead: 10,
                     maintainability: 120
                 }
