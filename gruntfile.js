@@ -7,7 +7,7 @@ module.exports = function (grunt) {
                     errorsOnly: false,
                     cyclomatic: 4,
                     halstead: 10,
-                    maintainability: 120
+                    maintainability: 115
                 }
             }
         }
