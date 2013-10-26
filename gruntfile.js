@@ -1,32 +1,17 @@
-// gruntfile.js
 module.exports = function (grunt) {
     grunt.initConfig({
-        karma: {
+        complexity: {
             default: {
+                src: 'source/*',
                 options: {
-                    frameworks: ['jasmine'],
-                    reporters: ['progress'],
-                    port: 9876,
-                    colors: true,
-                    browsers: ['PhantomJS'],
-                    captureTimeout: 10000,
-                    files: [
-                        'source/*',
-                        'test/*',
-                        'vendor/*'
-                    ],
-                    singleRun: true,
-                    preprocessors: {
-                        '**/*.html': 'html2js'
-                    },
-                    plugins: [
-                        'karma-jasmine',
-                        'karma-phantomjs-launcher',
-                        'karma-html2js-preprocessor'
-                    ]
+                    errorsOnly: false,
+                    cyclomatic: 2,
+                    halstead: 10,
+                    maintainability: 120
                 }
             }
         }
     });
-    grunt.loadNpmTasks('grunt-karma');
+
+    grunt.loadNpmTasks('grunt-complexity');
 };

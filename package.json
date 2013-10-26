@@ -1,21 +1,20 @@
 {
-  "name": "Grunt Karma Example",
+  "name": "grunt-complexity-example",
   "version": "0.1.0",
-  "description": "Bare bones example of Grunt with the grunt-karma task.",
+  "description": "Bare bones example of Grunt with the grunt-complexity reporter.",
   "main": "source/colorizer.js",
   "scripts": {
-    "test": "node_modules/.bin/grunt karma"
+    "start": "grunt complexity"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cobbdb/grunt-karma-example.git"
+    "url": "https://github.com/cobbdb/grunt-complexity-example.git"
   },
   "author": "Dan Cobb",
   "license": "BSD",
-  "devDependencies": {
-    "grunt-cli": "*",
-    "grunt": "*",
-    "karma": "0.10.2",
-    "grunt-karma": "*"
+  "dependencies": {
+    "grunt": "0.4.1",
+    "grunt-cli": "0.1.9",
+    "grunt-complexity": "0.1.3"
   }
 }

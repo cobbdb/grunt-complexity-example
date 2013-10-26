@@ -1,6 +1,7 @@
-Grunt Karma Example
-===================
+Grunt Complexity Example
+========================
 
-Bare bones example of Grunt with the grunt-karma task.
+Bare bones example of Grunt with the grunt-complexity reporter.
 
-To run: ``$ grunt karma``
+    $ npm install
+    $ npm start
