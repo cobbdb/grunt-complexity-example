@@ -2,7 +2,6 @@
   "name": "grunt-complexity-example",
   "version": "0.1.0",
   "description": "Bare bones example of Grunt with the grunt-complexity reporter.",
-  "main": "source/colorizer.js",
   "scripts": {
     "start": "grunt complexity"
   },
@@ -11,7 +10,6 @@
     "url": "https://github.com/cobbdb/grunt-complexity-example.git"
   },
   "author": "Dan Cobb",
-  "license": "BSD",
   "dependencies": {
     "grunt": "0.4.1",
     "grunt-cli": "0.1.9",
